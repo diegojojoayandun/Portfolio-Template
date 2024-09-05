@@ -101,12 +101,32 @@ const Experience = () => {
               sm:mt-[22px] mt-[16px] hover:bg-battleGray
               hover:text-eerieBlack transition duration-[0.2s]
               ease-in-out"
-              onClick={() =>
-                window.open(
-                  "/public/DEV_DIEGO_FERNANDO_JOJOA_YANDUN.pdf", //paste the link to your resume here
-                  "_blank"
-                )
-              }
+              onClick={async () => {
+                const blobUrl =
+                  "https://8unuhnavu44egppp.public.blob.vercel-storage.com/DEV_DIEGO_FERNANDO_JOJOA_YANDUN-xiS4fNgI3lUVpGDbDt8yoWEkDJGYX3.pdf"; // Coloca aquí la URL del blob de Vercel
+                try {
+                  const response = await fetch(blobUrl);
+                  if (!response.ok) {
+                    throw new Error(
+                      `Error al descargar el archivo: ${response.statusText}`
+                    );
+                  }
+                  const blob = await response.blob();
+                  const url = window.URL.createObjectURL(blob);
+                  const a = document.createElement("a");
+                  a.href = url;
+                  a.download = "Dev-DiegoFernandoJojoa.pdf"; // Nombre del archivo para descargar
+                  document.body.appendChild(a);
+                  a.click();
+                  a.remove();
+                  window.URL.revokeObjectURL(url);
+                } catch (error) {
+                  console.error(
+                    "Error descargando el archivo desde Blob Storage de Vercel:",
+                    error
+                  );
+                }
+              }}
               onMouseOver={() => {
                 document
                   .querySelector(".download-btn")
