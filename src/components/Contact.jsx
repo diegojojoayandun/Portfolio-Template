@@ -52,6 +52,7 @@ const Contact = () => {
             title: "¡Succesfull Send!",
             text: "Thank you. I will get back to you as soon as possible.",
             icon: "success",
+            showConfirmButton: true,
             confirmButtonColor: "#630b57",
             confirmButtonText: "Ok",
           });
@@ -69,6 +70,7 @@ const Contact = () => {
             title: "¡Not Send!",
             text: "Something went wrong. Please try again.",
             icon: "error",
+            showConfirmButton: true,
             confirmButtonColor: "#630b57",
             confirmButtonText: "Ok",
           });
