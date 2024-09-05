@@ -31,6 +31,8 @@ const Contact = () => {
     const ServiceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
     const TemplateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
     const UserId = import.meta.env.VITE_EMAILJS_USER_ID;
+    const ToName = import.meta.env.VITE_EMAILJS_TO_NAME;
+    const ToEmail = import.meta.env.VITE_EMAILJS_TO_EMAIL;
 
     emailjs
       .send(
@@ -38,9 +40,9 @@ const Contact = () => {
         TemplateId, // paste your TemplateID here (you'll find it under email templates).
         {
           from_name: form.name,
-          to_name: "Diego Jojoa", // put your name here.
+          to_name: ToName, // put your name here.
           from_email: form.email,
-          to_email: "xcryptorlabs@gmail.com", //put your email here.
+          to_email: ToEmail, //put your email here.
           message: form.message,
         },
         UserId //paste your Public Key here. You'll get it in your profile section.
