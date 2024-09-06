@@ -223,38 +223,36 @@
 }
 
 #footer {
-  /* background: #f7f8f9; */
   color: #f7f8f9;
   font-size: 14px;
   text-align: center;
   padding: 30px 0;
-}
-
-#footer h3 {
-  font-size: 36px;
-  font-weight: 700;
-  position: relative;
-  font-family: "Poppins", sans-serif;
-  padding: 0;
-  margin: 0 0 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /* Alinea elementos en una columna */
+  min-height: 200px; /* Altura mínima del footer para centrar */
 }
 
 #footer .social-links {
-  margin: 0 0 40px 0;
+  display: flex;
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente */
+  gap: 16px; /* Espacio entre los íconos */
+  margin: 0 auto; /* Centra el contenedor de íconos */
 }
 
 #footer .social-links a {
-  font-size: 18px;
-  display: inline-block;
+  display: flex; /* Cambia a flexbox */
+  align-items: center; /* Centra verticalmente */
+  justify-content: center; /* Centra horizontalmente */
   background: #474646;
   color: #fff;
   line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
+  width: 50px; /* Ajusta el tamaño del contenedor */
+  height: 50px; /* Ajusta el tamaño del contenedor */
   border-radius: 50%;
   text-align: center;
-  width: 60px;
-  height: 60px;
   transition: 0.3s;
 }
 
@@ -270,6 +268,16 @@
 
 #footer .credits {
   font-size: 13px;
+}
+
+.credits a {
+  color: #464545; /* Color original del enlace */
+  text-decoration: none; /* Quitar subrayado si es necesario */
+  transition: color 0.3s; /* Transición suave del color */
+}
+
+.credits a:hover {
+  color: #a8a8a8; /* Cambia a este color cuando pasas el mouse por encima */
 }
 .whatsapp-float {
   position: fixed; /* Fijo en la pantalla */
@@ -309,6 +317,11 @@
   .menu {
     padding: 1rem;
   }
+
+  #footer .social-links a {
+    width: 50px;
+    height: 50px;
+  }
 }
 @media (max-width: 450px) {
   #projects,
@@ -319,5 +332,9 @@
 
   .menu {
     padding: 1rem;
+  }
+  #footer .social-links a {
+    width: 45px;
+    height: 45px;
   }
 }
