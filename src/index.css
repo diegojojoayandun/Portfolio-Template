@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import "bootstrap-icons/font/bootstrap-icons.css";
+@import "boxicons/css/boxicons.min.css";
 
 @tailwind base;
 @tailwind components;
@@ -221,6 +222,55 @@
   }
 }
 
+#footer {
+  /* background: #f7f8f9; */
+  color: #f7f8f9;
+  font-size: 14px;
+  text-align: center;
+  padding: 30px 0;
+}
+
+#footer h3 {
+  font-size: 36px;
+  font-weight: 700;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+#footer .social-links {
+  margin: 0 0 40px 0;
+}
+
+#footer .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #474646;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  transition: 0.3s;
+}
+
+#footer .social-links a:hover {
+  background: #2b2c2c;
+  color: #fff;
+  text-decoration: none;
+}
+
+#footer .copyright {
+  margin: 0 0 5px 0;
+}
+
+#footer .credits {
+  font-size: 13px;
+}
 .whatsapp-float {
   position: fixed; /* Fijo en la pantalla */
   width: 60px; /* Ancho del botón */
