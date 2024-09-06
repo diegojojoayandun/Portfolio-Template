@@ -187,7 +187,6 @@ const projects = [
     ],
     image: nanypetapi,
     repo: "https://github.com/diegojojoayandun/NanyPetApi",
-    demo: "https://shaqdeff.github.io/Leaderboard/",
   },
   {
     id: "project-3",
@@ -209,7 +208,6 @@ const projects = [
     ],
     image: miabogadoya,
     repo: "https://github.com/diegojojoayandun/ciclo4-stack-mern",
-    demo: "https://inspiring-medovik-37d3b3.netlify.app/",
   },
   {
     id: "project-4",
@@ -231,7 +229,6 @@ const projects = [
     ],
     image: beautybussiness,
     repo: "https://github.com/diegojojoayandun/Beauty_Business_DJ",
-    demo: "https://movie-metro.netlify.app/",
   },
   {
     id: "project-5",
@@ -253,7 +250,6 @@ const projects = [
     ],
     image: yam,
     repo: "https://github.com/diegojojoayandun/yam",
-    demo: "https://shaqdeff.github.io/Nyeusi-Fest-Site/",
   },
 ];
 

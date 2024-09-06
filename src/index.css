@@ -250,9 +250,23 @@
 }
 
 @media (max-width: 640px) {
-  .nav-links {
-    font-size: 18px;
+  #projects,
+  #about,
+  #contact {
+    font-size: 80px;
   }
+
+  .menu {
+    padding: 1rem;
+  }
+}
+@media (max-width: 450px) {
+  #projects,
+  #about,
+  #contact {
+    font-size: 70px;
+  }
+
   .menu {
     padding: 1rem;
   }

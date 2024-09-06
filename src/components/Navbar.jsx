@@ -27,14 +27,6 @@ const Navbar = () => {
             alt="logo"
             className="xs:w-[40px] xs:h-[40px] sm:w-[50px] sm:h-[50px] w-[45px] h-[45px] object-contain"
           />
-
-          {/* if you have text you want besides your logo it comes here.
-          Otherwise delete this if you don't need it. */}
-          {/* <img
-            src={logotext}
-            alt="logo"
-            className="s:w-[70px] xs:h-[70px] sm:w-[90px] sm:h-[90px] w-[85px] h-[85px] object-contain"
-          /> */}
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-14 mt-2">
           {navLinks.map((nav) => (
@@ -70,7 +62,7 @@ const Navbar = () => {
               </div>
               <ul
                 className="list-none flex flex-col gap-6
-                items-center justify-end mt-16 ml-4"
+                items-start justify-end mt-16 ml-4"
               >
                 {navLinks.map((nav) => (
                   <li
@@ -78,9 +70,10 @@ const Navbar = () => {
                     key={nav.id}
                     className={`${
                       active === nav.title ? "text-french" : "text-eerieBlack"
-                    } text-[16px] font-bold font-arenq
+                    } md:text-[20px] sm:text-[16px] text-[24px] font-bold font-arenq
                       uppercase tracking-[1px] cursor-pointer
-                      hover:text-french hover:underline transition-all duration-300 ease-in-out`}
+                      hover:text-french hover:underline transition-all duration-300 ease-in-out
+                      border-b-2 border-transparent hover:border-french`}
                     onClick={() => {
                       setToggle(!toggle);
                       setActive(nav.title);
