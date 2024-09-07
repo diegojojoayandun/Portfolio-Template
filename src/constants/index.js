@@ -67,10 +67,6 @@ const technologies = [
     icon: html,
   },
   {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
     name: "JavaScript",
     icon: javascript,
   },
@@ -87,32 +83,12 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "MySQL",
-    icon: mysql,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
     name: "AWS",
     icon: aws,
   },
   {
-    name: "Azure",
-    icon: azure,
-  },
-  {
-    name: "postgresql",
-    icon: postgresql,
-  },
-  {
     name: "git",
     icon: git,
-  },
-  {
-    name: "GCP",
-    icon: gcp,
   },
   {
     name: "docker",
