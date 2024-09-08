@@ -24,6 +24,19 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    // Check if any form fields are empty
+    if (!form.name || !form.email || !form.message) {
+      Swal.fire({
+        title: "Missing Information",
+        text: "Please fill in all fields before sending.",
+        icon: "warning",
+        showConfirmButton: true,
+        confirmButtonColor: "#630b57",
+        confirmButtonText: "Ok",
+      });
+      return; // Exit the function early
+    }
     setLoading(true);
 
     // sign up on emailjs.com (select the gmail service and connect your account).

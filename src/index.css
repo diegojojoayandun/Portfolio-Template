@@ -236,7 +236,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column; /* Alinea elementos en una columna */
- /* min-height: 200px; /* Altura mínima del footer para centrar */
+  /* min-height: 200px; /* Altura mínima del footer para centrar */
 }
 
 #footer .social-links {
@@ -300,11 +300,12 @@
   display: flex; /* Flexbox para centrar */
   align-items: center; /* Centrar verticalmente */
   justify-content: center; /* Centrar horizontalmente */
-  transition: background-color 0.3s; /* Transición suave */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Transición suave */
 }
 
 .whatsapp-float:hover {
   background-color: #333535; /* Color de fondo al pasar el cursor */
+  box-shadow: 0 0 15px 5px #bfbfbf; /* Efecto de brillo plateado */
 }
 
 .whatsapp-float:active {

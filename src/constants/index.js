@@ -133,7 +133,7 @@ const projects = [
     id: "project-1",
     name: "CajaHonor",
     description:
-      "Corporate web app using React and .NET for managing military housing funds.",
+      "Corporate web app for managing military housing funds. using React and .NET.",
     tags: [
       {
         name: "react",
@@ -152,9 +152,9 @@ const projects = [
   },
   {
     id: "project-2",
-    name: "NanyPet API",
+    name: "NanyPet RestAPI",
     description:
-      "RestAPI: 3-tier architecture, repository pattern, Ardalis Endpoints",
+      "RestAPI: 3-tier architecture, repository pattern, Ardalis Endpoints, .NET 7.0",
     tags: [
       {
         name: ".NET",
@@ -175,7 +175,7 @@ const projects = [
   {
     id: "project-3",
     name: "Mi Abogado Ya!",
-    description: "MERN Stack web app",
+    description: "MERN Stack web app. Javascript, React, NodeJS, MongoDB",
     tags: [
       {
         name: "reactjs",
@@ -217,7 +217,8 @@ const projects = [
   {
     id: "project-5",
     name: "Yet Another Mail",
-    description: "This is a Google Chrome extension tha simplify gmail client.",
+    description:
+      "This is a Google Chrome extension tha simplify gmail client. CSS3, Vanilla JS",
     tags: [
       {
         name: "javascript",
