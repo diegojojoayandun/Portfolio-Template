@@ -67,6 +67,10 @@ const technologies = [
     icon: html,
   },
   {
+    name: "CSS",
+    icon: css,
+  },
+  {
     name: "JavaScript",
     icon: javascript,
   },
@@ -81,6 +85,10 @@ const technologies = [
   {
     name: "React JS",
     icon: reactjs,
+  },
+  {
+    name: "MySQL",
+    icon: mysql,
   },
   {
     name: "AWS",
