@@ -133,10 +133,10 @@ const Projects = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]"
         >
-          These projects demonstrate my skills with practical examples of some
-          of my work, including brief descriptions and links to code
-          repositories. They showcase my ability to tackle problems, provide
-          solutions using various technologies, and efficiently manage projects.
+          These are some personal and professional projects, including brief
+          descriptions and links to <b>GitHub</b> repositories. They showcase my
+          ability to tackle problems, provide solutions using various
+          technologies, and efficiently manage projects.
         </motion.p>
       </div>
 

@@ -69,6 +69,11 @@
   letter-spacing: -2px;
 }
 
+#footer {
+  margin-left: -24px;
+  font-size: 100px;
+}
+
 .hero-heading {
   font-family: "Poppins", sans-serif;
   text-transform: uppercase;
@@ -231,7 +236,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column; /* Alinea elementos en una columna */
-  min-height: 200px; /* Altura mínima del footer para centrar */
+ /* min-height: 200px; /* Altura mínima del footer para centrar */
 }
 
 #footer .social-links {
