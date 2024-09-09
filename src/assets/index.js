@@ -49,6 +49,7 @@ import holberton from "./company/holberton.png";
 import devsu from "./company/devsu.png";
 
 import space from "./projects/space-hub.png";
+import portfolio from "./projects/portfolio.png";
 import cajahonor from "./projects/cajahonor.png";
 import nanypetapi from "./projects/nanypetapi.png";
 import miabogadoya from "./projects/miabogadoya.png";
@@ -98,6 +99,7 @@ export {
   typescript,
   space,
   python,
+  portfolio,
   cajahonor,
   nanypetapi,
   miabogadoya,

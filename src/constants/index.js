@@ -17,6 +17,7 @@ import {
   mysql,
   aws,
   azure,
+  portfolio,
   cajahonor,
   nanypetapi,
   miabogadoya,
@@ -129,6 +130,27 @@ const experiences = [
 ];
 
 const projects = [
+  {
+    id: "project-0",
+    name: "Portfolio",
+    description: "My personal portfolio, Vite, three.js, reactJs, Tailwind.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Vite",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: portfolio,
+    repo: "https://github.com/diegojojoayandun/Portfolio-Template",
+  },
   {
     id: "project-1",
     name: "CajaHonor",
